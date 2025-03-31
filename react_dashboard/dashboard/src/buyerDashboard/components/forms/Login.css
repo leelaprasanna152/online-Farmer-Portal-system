@@ -1,0 +1,50 @@
+.loginSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light background */
+  }
+  
+  .authForm {
+    width: 350px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .authForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btnSubmit {
+    margin-top: 10px;
+  }
+  
+  .btnSubmit button {
+    width: 100%;
+    padding: 10px;
+    background: #4fa94d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btnSubmit button:hover {
+    background: #3d8a3a;
+  }
+  
+  .showPassword {
+    cursor: pointer;
+    color: blue;
+    margin-bottom: 10px;
+    display: block;
+  }
+  

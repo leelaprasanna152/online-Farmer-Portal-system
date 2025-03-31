@@ -1,0 +1,60 @@
+.header-nav {
+    background-color: black !important; /* ✅ Ensure black background */
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* ✅ Ensure it stays above other elements */
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 40px; /* ✅ Adjust size to match the reference */
+    height: auto;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: limegreen; /* ✅ Match the reference */
+}
+
+.nav-route {
+    color: white;
+    font-size: 18px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.nav-route:hover {
+    color: limegreen; /* ✅ Match hover effect */
+}
+
+.login-btn {
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.register-btn {
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: darkgreen;
+}
