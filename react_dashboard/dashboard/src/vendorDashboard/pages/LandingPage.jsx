@@ -14,7 +14,8 @@ import "./LandingPage.css"; // ✅ Import styles
 import io  from "socket.io-client";
 import { API_URL } from "../data/apiPath";
 import axios from "axios";
-const socket = io("http://localhost:4000");
+const socket = io("https://online-farmer-portal-system-2.onrender.com");
+
 
 const LandingPage = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -186,7 +187,7 @@ const LandingPage = () => {
         }
         
         console.log("Fetching buyer ID for username:", buyerUsername);
-        const response = await axios.get(`http://localhost:4000/messages/buyer/${encodeURIComponent(buyerUsername)}`);
+        const response = await axios.get(`${API_URL}/messages/buyer/${encodeURIComponent(buyerUsername)}`);
         
         console.log("Response Data:", response.data);
         setBuyerId(response.data.buyerId);

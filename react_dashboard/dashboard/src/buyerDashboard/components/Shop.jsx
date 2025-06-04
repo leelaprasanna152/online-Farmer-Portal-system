@@ -5,7 +5,8 @@ import { API_URL } from "../data/apiPath";
 import CartSidebar from "../components/CartSidebar";
 import io  from "socket.io-client";
 import axios from "axios";
-const socket = io("http://localhost:4000");
+const socket = io("https://online-farmer-portal-system-2.onrender.com");
+
 import "./Shop.css";
 
 const Shop = () => {
@@ -117,7 +118,7 @@ const Shop = () => {
             console.error("Invalid vendor username:", vendorUsername);
             return;
         }
-        const response = await axios.get(`http://localhost:4000/messages/vendor/${encodeURIComponent(vendorUsername)}`);
+        const response = await axios.get(`${API_URL}/messages/vendor/${encodeURIComponent(vendorUsername)}`);
         setVendorId(response.data.vendorId);
     } catch (error) {
         console.error("Error fetching vendor ID:", error.response?.data || error.message);

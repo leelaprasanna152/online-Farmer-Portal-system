@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { API_URL } from "../../data/apiPath";
 import { ThreeCircles } from 'react-loader-spinner'; // Ensure this package is installed
 import "./Register.css";
 
 const Register = () => {
-  const API_URL = 'http://localhost:4000';
+  
   const navigate = useNavigate();
 
   const [username, setUsername] = useState('');

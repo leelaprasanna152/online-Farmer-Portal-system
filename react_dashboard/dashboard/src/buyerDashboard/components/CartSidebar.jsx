@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { API_URL } from '../data/apiPath';
 const CartSidebar = ({ isCartOpen, toggleCart, cartItems, clearCart }) => {
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
   const [paymentDetails, setPaymentDetails] = useState({
@@ -49,7 +49,7 @@ const CartSidebar = ({ isCartOpen, toggleCart, cartItems, clearCart }) => {
         };
 
         try {
-            const response = await fetch("http://localhost:4000/api/orders", {
+            const response = await fetch(`${API_URL}/api/orders`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
